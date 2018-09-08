@@ -79,4 +79,13 @@ def full?
   end
 end
 
+def draw?
+  if won?
+    false
+  else
+    full?(board)
+  end
+end
+
+
 end
