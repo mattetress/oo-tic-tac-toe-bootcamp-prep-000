@@ -91,4 +91,11 @@ def over?
    won? || draw?
 end
 
+def winner
+  if won?
+    winning = won?
+    @board[winning[0]]
+  end
+end
+
 end
